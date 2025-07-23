@@ -1,24 +1,39 @@
+!-- 📄 score.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scoreboard</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Table Tennis Scoreboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="scoreboard">
-    <div class="team" id="team1">
-      <div class="name" id="team1-name">Team 1</div>
-      <div class="score" id="team1-score">0</div>
-      <div class="sel" id="team1-sel">SEL</div>
+  <div class="container">
+    <div class="team" id="teamA">
+      <h2 id="teamAName">Team A</h2>
+      <div class="score-box">
+        <div class="label">SEL</div>
+        <div id="teamASel" class="value">0</div>
+      </div>
+      <div class="score-box">
+        <div class="label">POINT</div>
+        <div id="teamAPoint" class="value">0</div>
+      </div>
     </div>
-    <div class="team" id="team2">
-      <div class="name" id="team2-name">Team 2</div>
-      <div class="score" id="team2-score">0</div>
-      <div class="sel" id="team2-sel">SEL</div>
+
+    <div class="team" id="teamB">
+      <h2 id="teamBName">Team B</h2>
+      <div class="score-box">
+        <div class="label">SEL</div>
+        <div id="teamBSel" class="value">0</div>
+      </div>
+      <div class="score-box">
+        <div class="label">POINT</div>
+        <div id="teamBPoint" class="value">0</div>
+      </div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
