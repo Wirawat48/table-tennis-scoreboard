@@ -1,1 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.scoreboard {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background: #222;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.team {
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.points {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.sets {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
