@@ -1,46 +1,45 @@
+
 body {
   margin: 0;
+  background-color: #000;
   font-family: 'Arial', sans-serif;
-  background-color: #111;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .scoreboard {
+  width: 280px;
+  padding: 5px;
+}
+
+.team-row {
   display: flex;
   align-items: center;
-  gap: 4rem;
-  background: #222;
-  padding: 2rem 4rem;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin-bottom: 5px;
+  background: linear-gradient(to bottom, #222 0%, #111 100%);
+  border-radius: 2px;
 }
 
-.team {
+.team-name {
+  flex: 1;
+  color: white;
+  font-size: 14px;
+  padding: 5px 8px;
+  font-weight: bold;
+}
+
+.score {
+  width: 26px;
   text-align: center;
-}
-
-.team h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.points {
-  font-size: 4rem;
+  font-size: 16px;
+  color: white;
   font-weight: bold;
+  padding: 4px 0;
+  margin-left: 2px;
 }
 
-.sets {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  color: #ccc;
+.sel {
+  background-color: #c68a2f;
 }
 
-.vs {
-  font-size: 2rem;
-  font-weight: bold;
+.point {
+  background-color: #c68a2f;
 }
-
