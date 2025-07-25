@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Control Panel</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Control Panel</h1>
-  <div class="controls">
-    <label for="teamASelect">Team A:</label>
-    <select id="teamASelect"></select>
-    <input type="text" id="teamANameInput" placeholder="Custom name"/>
+  <h2>🎮 Scoreboard Control Panel</h2>
 
-    <label for="teamBSelect">Team B:</label>
-    <select id="teamBSelect"></select>
-    <input type="text" id="teamBNameInput" placeholder="Custom name"/>
+  <div class="team-select">
+    <label for="team1-select">Team 1:</label>
+    <select id="team1-select"></select>
 
-    <button onclick="resetScores()">Reset</button>
-    <button onclick="toggleScoreboard()">Toggle Scoreboard</button>
+    <label for="team2-select">Team 2:</label>
+    <select id="team2-select"></select>
   </div>
-  <script src="control.js"></script>
+
+  <div class="score-controls">
+    <div class="team-control">
+      <h3 id="c-team1-name">Team A</h3>
+      <button onclick="changePoints('team1', 1)">+1</button>
+      <button onclick="changePoints('team1', -1)">-1</button>
+      <button onclick="changeSets('team1', 1)">+Set</button>
+      <button onclick="changeSets('team1', -1)">-Set</button>
+    </div>
+
+    <div class="team-control">
+      <h3 id="c-team2-name">Team B</h3>
+      <button onclick="changePoints('team2', 1)">+1</button>
+      <button onclick="changePoints('team2', -1)">-1</button>
+      <button onclick="changeSets('team2', 1)">+Set</button>
+      <button onclick="changeSets('team2', -1)">-Set</button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button onclick="resetPoints()">🔄 Reset Points</button>
+    <button onclick="toggleScoreboard()">🎬 Show/Hide Scoreboard</button>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
