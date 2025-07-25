@@ -1,24 +1,25 @@
-
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Table Tennis Scoreboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <h1>Table Tennis Scoreboard</h1>
   <div class="scoreboard">
-    <div class="team-row">
-      <div class="team-name" id="team1-name">ชื่อทีม 1</div>
-      <div class="score sel" id="team1-sel">0</div>
-      <div class="score point" id="team1-point">0</div>
+    <div class="team" id="teamA">
+      <h2 id="teamAName">Team A</h2>
+      <p>SEL: <span id="teamASel">0</span></p>
+      <p>POINT: <span id="teamAPoint">0</span></p>
     </div>
-    <div class="team-row">
-      <div class="team-name" id="team2-name">ชื่อทีม 2</div>
-      <div class="score sel" id="team2-sel">0</div>
-      <div class="score point" id="team2-point">0</div>
+    <div class="team" id="teamB">
+      <h2 id="teamBName">Team B</h2>
+      <p>SEL: <span id="teamBSel">0</span></p>
+      <p>POINT: <span id="teamBPoint">0</span></p>
     </div>
   </div>
+  <script src="scoreboard.js"></script>
 </body>
 </html>

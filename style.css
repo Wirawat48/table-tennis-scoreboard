@@ -1,45 +1,15 @@
-
 body {
-  margin: 0;
-  background-color: #000;
-  font-family: 'Arial', sans-serif;
-}
-
-.scoreboard {
-  width: 280px;
-  padding: 5px;
-}
-
-.team-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-  background: linear-gradient(to bottom, #222 0%, #111 100%);
-  border-radius: 2px;
-}
-
-.team-name {
-  flex: 1;
-  color: white;
-  font-size: 14px;
-  padding: 5px 8px;
-  font-weight: bold;
-}
-
-.score {
-  width: 26px;
+  font-family: sans-serif;
+  padding: 20px;
   text-align: center;
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-  padding: 4px 0;
-  margin-left: 2px;
 }
-
-.sel {
-  background-color: #c68a2f;
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
-
-.point {
-  background-color: #c68a2f;
+.team {
+  border: 2px solid #ccc;
+  padding: 10px;
+  width: 150px;
 }

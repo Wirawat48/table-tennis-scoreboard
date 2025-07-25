@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Control Panel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Control Panel</h1>
+  <div class="controls">
+    <label for="teamASelect">Team A:</label>
+    <select id="teamASelect"></select>
+    <input type="text" id="teamANameInput" placeholder="Custom name"/>
+
+    <label for="teamBSelect">Team B:</label>
+    <select id="teamBSelect"></select>
+    <input type="text" id="teamBNameInput" placeholder="Custom name"/>
+
+    <button onclick="resetScores()">Reset</button>
+    <button onclick="toggleScoreboard()">Toggle Scoreboard</button>
+  </div>
+  <script src="control.js"></script>
+</body>
+</html>
